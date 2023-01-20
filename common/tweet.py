@@ -1,5 +1,5 @@
 import tweepy
-from config import CONFIG
+from settings import CONFIG
 
 
 def tweet_run(tweet_body):

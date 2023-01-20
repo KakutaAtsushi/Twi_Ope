@@ -1,6 +1,6 @@
 from requests_oauthlib import OAuth1Session
 
-from config import CONFIG
+from settings import CONFIG
 
 
 def oauth2():

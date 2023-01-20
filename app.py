@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, redirect
-from tweet import tweet_run
+from common.tweet import tweet_run
 
 app = Flask(__name__)
 
