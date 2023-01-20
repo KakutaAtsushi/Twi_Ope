@@ -4,7 +4,7 @@ from common.tweet import tweet_run
 app = Flask(__name__)
 
 
-@app.route('/', methods=['POST'])
+@app.route('/', methods=['GET', 'POST'])
 def hello_world():
     if request.method == 'POST':
         tweet_run(request.form['tweet_body'])
