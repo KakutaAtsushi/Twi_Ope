@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, url_for
 from common.tweet import tweet_run
 
 app = Flask(__name__)
@@ -13,7 +13,7 @@ def hello_world():
 def test():
     if request.method == 'POST':
         tweet_run(request.form['tweet_body'])
-    return redirect('http://127.0.0.1:5000')
+    return redirect(url_for('index'))
 
 
 if __name__ == '__main__':
