@@ -1,0 +1,4 @@
+.ht*
+settings.py
+venv
+index.cgi
