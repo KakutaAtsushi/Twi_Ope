@@ -7,7 +7,7 @@ def oauth2():
     consumer_key = CONFIG["CONSUMER_KEY"]
     consumer_secret = CONFIG["CONSUMER_SECRET"]
 
-    callback_url = "http://kakip1919.pythonanywhere.com/oauth/"
+    callback_url = "http://kakip1919.pythonanywhere.com/oauth"
     request_endpoint_url = "https://api.twitter.com/oauth/request_token"
     authenticate_url = "https://api.twitter.com/oauth/authenticate"
 
