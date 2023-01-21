@@ -14,7 +14,7 @@ def index():
 
 
 @app.route('/oauth', methods=['GET'])
-def twitter_auth(oauth_token):
+def twitter_auth():
     oauth_token = request.args.get("oauth_token")
     return render_template('index.html',oauth_token=oauth_token)
 
