@@ -10,15 +10,13 @@
 
 <div class="container-fluid">
     <form action="/" method="POST">
-        <label  class="twitter_form">ツイートしたい内容を入れてね {{ result }} さん  </label>
+        <label  class="twitter_form">ツイートしたい内容を入れてね {{ oauth_token }} さん  </label>
         <textarea class="form-control" name="tweet_body"></textarea>
         <button type="submit" class="btn btn-primary">ツイートする</button>
     </form>
 </div>
-<style>
-    .twitter_form{
-        display: block;
-    }
-</style>
+<a href="{{ oauth_url }}">
+     <button type="button" class="btn btn-warning">連携する！</button>
+</a>
 </body>
 </html>

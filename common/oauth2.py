@@ -7,7 +7,7 @@ def oauth2():
     consumer_key = CONFIG["CONSUMER_KEY"]
     consumer_secret = CONFIG["CONSUMER_SECRET"]
 
-    callback_url = "https://tools.tsukumijima.net/twittertoken-viewer/"
+    callback_url = "http://kakip1919.pythonanywhere.com/oauth/"
     request_endpoint_url = "https://api.twitter.com/oauth/request_token"
     authenticate_url = "https://api.twitter.com/oauth/authenticate"
 
@@ -18,5 +18,4 @@ def oauth2():
     oauth_token_str = response_req_text.split("&")
     token_dict = {x.split("=")[0]: x.split("=")[1] for x in oauth_token_str}
     oauth_token = token_dict["oauth_token"]
-
     return f"{authenticate_url}?oauth_token={oauth_token}"
